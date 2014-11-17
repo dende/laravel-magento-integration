@@ -70,7 +70,7 @@ The first parameter defines the name of the connection and should be unique. The
 
 ##Usage
 
-An exhaustive list of possible methods is available on the [Magento Website](http://www.magentocommerce.com/api/soap/)
+An exhaustive list of possible methods is available on the [Magento Website](http://www.magentocommerce.com/api/soap/introduction.html)
 
 There are two basic methods used to interact with the SOAP Api
 
