@@ -3,22 +3,10 @@ Magento SOAP Integration for Laravel
 
 A simple and somewhat intuitive package for managing and interacting with the Magento SOAP Api. Compatible with Laravel 4 and Magneto SOAP v1 & v2.
 
-[![Build Status](https://travis-ci.org/TinyRocket/laravel-magento-integration.svg?branch=master)](https://travis-ci.org/TinyRocket/laravel-magento-integration) [![Latest Stable Version](https://poser.pugx.org/dende\magento/v/stable.svg)](https://packagist.org/packages/dende\magento) [![Total Downloads](https://poser.pugx.org/dende\magento/downloads.svg)](https://packagist.org/packages/dende\magento) [![Latest Unstable Version](https://poser.pugx.org/dende\magento/v/unstable.svg)](https://packagist.org/packages/dende\magento) [![License](https://poser.pugx.org/dende\magento/license.svg)](https://packagist.org/packages/dende\magento)
-
-> **Note:** This package is still in the beta phase of development. I'd advise against using to test against a production Magento application. This package is for Laravel 4, if you're looking for a Laravel 3 version of this package, checkout [MatteoCastiglioni's bundle](https://github.com/MatteoCastiglioni/magentoapi)
-
 
 ### Installation
 
-To install via composer, add the following to your requirements
-
-    "require": {
-		...
-		"dende\magento": "1.0.*"
-		...
-	},
-**Note:** You may need to change your **minimum-stability** to **dev**
-
+if you really want to use my version and not [jotwehs](https://github.com/jotweh/laravel-magento-integration) check out via git
 ### Configuration
 
 Add the following to your Laravel Application configuration (app/config/app.php)
