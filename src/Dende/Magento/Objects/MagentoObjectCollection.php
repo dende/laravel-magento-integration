@@ -1,7 +1,7 @@
-<?php namespace Tinyrocket\Magento\Objects;
+<?php namespace Dende\Magento\Objects;
 
-use Tinyrocket\Magento\Objects\MagentoObject;
-use Tinyrocket\Magento\Objects\MagentoObjectCollectionException;
+use Dende\Magento\Objects\MagentoObject;
+use Dende\Magento\Objects\MagentoObjectCollectionException;
 
 /**
  *  Magento API | Connection Exceptions
@@ -72,7 +72,7 @@ class MagentoObjectCollection {
     /**
      *  Get Collection
      *
-     *  @return Tinyrocket\Magento\Objects\MagentoObjectCollection
+     *  @return Dende\Magento\Objects\MagentoObjectCollection
      */
     public function getCollection()
     {

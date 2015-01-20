@@ -3,7 +3,7 @@ Magento SOAP Integration for Laravel
 
 A simple and somewhat intuitive package for managing and interacting with the Magento SOAP Api. Compatible with Laravel 4 and Magneto SOAP v1 & v2.
 
-[![Build Status](https://travis-ci.org/TinyRocket/laravel-magento-integration.svg?branch=master)](https://travis-ci.org/TinyRocket/laravel-magento-integration) [![Latest Stable Version](https://poser.pugx.org/tinyrocket/magento/v/stable.svg)](https://packagist.org/packages/tinyrocket/magento) [![Total Downloads](https://poser.pugx.org/tinyrocket/magento/downloads.svg)](https://packagist.org/packages/tinyrocket/magento) [![Latest Unstable Version](https://poser.pugx.org/tinyrocket/magento/v/unstable.svg)](https://packagist.org/packages/tinyrocket/magento) [![License](https://poser.pugx.org/tinyrocket/magento/license.svg)](https://packagist.org/packages/tinyrocket/magento)
+[![Build Status](https://travis-ci.org/TinyRocket/laravel-magento-integration.svg?branch=master)](https://travis-ci.org/TinyRocket/laravel-magento-integration) [![Latest Stable Version](https://poser.pugx.org/dende\magento/v/stable.svg)](https://packagist.org/packages/dende\magento) [![Total Downloads](https://poser.pugx.org/dende\magento/downloads.svg)](https://packagist.org/packages/dende\magento) [![Latest Unstable Version](https://poser.pugx.org/dende\magento/v/unstable.svg)](https://packagist.org/packages/dende\magento) [![License](https://poser.pugx.org/dende\magento/license.svg)](https://packagist.org/packages/dende\magento)
 
 > **Note:** This package is still in the beta phase of development. I'd advise against using to test against a production Magento application. This package is for Laravel 4, if you're looking for a Laravel 3 version of this package, checkout [MatteoCastiglioni's bundle](https://github.com/MatteoCastiglioni/magentoapi)
 
@@ -14,7 +14,7 @@ To install via composer, add the following to your requirements
 
     "require": {
 		...
-		"tinyrocket/magento": "1.0.*"
+		"dende\magento": "1.0.*"
 		...
 	},
 **Note:** You may need to change your **minimum-stability** to **dev**
@@ -28,7 +28,7 @@ To your **providers** array
 
     'providers' => array(
         ...
-		'Tinyrocket\Magento\MagentoServiceProvider',
+		'Dende\Magento\MagentoServiceProvider',
 		...
 	),
 	
@@ -37,19 +37,19 @@ and to your **aliases** array
 
 	'aliases' => array(
 	    ...
-		'Magento' => 'Tinyrocket\Magento\Facades\Magento',
+		'Magento' => 'Dende\Magento\Facades\Magento',
 		...
 	),
 	
 Publish the the package configuration file by running the following in CLI
 
-    php artisan config:publish tinyrocket/magento
+    php artisan config:publish dende\magento
     
 #### Setting up the SOAP connections
 
 The quickest way to get started with Magento integration is to add your connection(s) to the newly published configuration file. The file can be found in
 
-    app/config/packages/tinyrocket/magento/config.php
+    app/config/packages/dende\magento/config.php
     
 There is no limit to the amount of connections that you can save, but you should set a default configuration to handle fallbacks. Inside of the configuration file, set the following with your Magento SOAP information.
 

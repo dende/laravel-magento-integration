@@ -1,6 +1,4 @@
-<?php namespace Tinyrocket\Magento\Facades;
-
-use Illuminate\Support\Facades\Facade;
+<?php namespace Dende\Magento\Connections;
 
 /**
  * 	Magento API | Connection Exceptions
@@ -28,21 +26,16 @@ use Illuminate\Support\Facades\Facade;
  *	THE SOFTWARE.
  *
  * 	@category   MagentoApi
- * 	@package    MagentoApi_Facades_MagentoSoapStorage
+ * 	@package    MagentoApi_Connections_Exceptions
  * 	@author     TinyRocket <michael@tinyrocket.co>
  * 	@copyright  2014 TinyRocket
  *
  */
 
-class MagentoSoapStorage extends Facade {
+class ConnectionNotProvidedException extends \InvalidArgumentException {}
 
-  	/**
-   	 * Get the registered name of the component.
-   	 *
-     * @return string
-     */
-  	protected static function getFacadeAccessor() 
-  	{ 
-  		return 'magento_soap_storage'; 
-	}
-}
+class InvalidConnectionException extends \InvalidArgumentException {}
+
+class MagentoSoapClientException extends \InvalidArgumentException {}
+
+class MagentoSoapConfigurationException extends \InvalidArgumentException {}

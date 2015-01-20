@@ -1,6 +1,6 @@
-<?php namespace Tinyrocket\Magento\Objects;
+<?php namespace Dende\Magento\Objects;
 
-use Tinyrocket\Magento\Objects\MagentoObjectException;
+use Dende\Magento\Objects\MagentoObjectException;
 
 /**
  * 	Magento API | Connection Exceptions

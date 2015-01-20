@@ -1,6 +1,4 @@
-<?php namespace Tinyrocket\Magento\Facades;
-
-use Illuminate\Support\Facades\Facade;
+<?php namespace Dende\Magento\Objects;
 
 /**
  * 	Magento API | Connection Exceptions
@@ -28,21 +26,10 @@ use Illuminate\Support\Facades\Facade;
  *	THE SOFTWARE.
  *
  * 	@category   MagentoApi
- * 	@package    MagentoApi_Facades_Magento
+ * 	@package    MagentoApi_Connections_Exceptions
  * 	@author     TinyRocket <michael@tinyrocket.co>
  * 	@copyright  2014 TinyRocket
  *
  */
-
-class Magento extends Facade {
-
-  	/**
-   	 * Get the registered name of the component.
-   	 *
-     * @return string
-     */
-  	protected static function getFacadeAccessor() 
-  	{ 
-  		return 'magento'; 
-	}
-}
+class MagentoObjectCollectionException extends \InvalidArgumentException {}
+class MagentoObjectException extends \InvalidArgumentException {}

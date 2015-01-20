@@ -1,11 +1,11 @@
-<?php namespace Tinyrocket\Magento\Connections;
+<?php namespace Dende\Magento\Connections;
 
-use Tinyrocket\Magento\Connections\ConnectionNotProvidedException;
-use Tinyrocket\Magento\Connections\InvalidConnectionException;
-use Tinyrocket\Magento\Connections\MagentoSoapClientException;
-use Tinyrocket\Magento\Connections\MagentoSoapConfigurationException;
-use Tinyrocket\Magento\Objects\MagentoObjectCollection;
-use Tinyrocket\Magento\Objects\MagentoObject;
+use Dende\Magento\Connections\ConnectionNotProvidedException;
+use Dende\Magento\Connections\InvalidConnectionException;
+use Dende\Magento\Connections\MagentoSoapClientException;
+use Dende\Magento\Connections\MagentoSoapConfigurationException;
+use Dende\Magento\Objects\MagentoObjectCollection;
+use Dende\Magento\Objects\MagentoObject;
 
 /**
  * 	Magento API | Connection Exceptions

@@ -1,5 +1,5 @@
 {
-    "name": "tinyrocket/magento",
+    "name": "dende/magento",
     "description": "A simple Magento Integration using SOAP v1 and v2",
     "version": "1.0.0",
     "keywords": ["laravel", "magento", "soap"],
@@ -8,7 +8,11 @@
         {
             "name": "Michael Kyle Martin",
             "email": "michael@tinyrocket.co"
-        }
+        },
+	{
+	    "name": "Christian Hartlage",
+	    "email": "c@dende.de"
+	}
     ],
     "require": {
         "php": ">=5.4.0",
@@ -17,11 +21,11 @@
     "autoload": {
         "classmap": [
             "src/migrations",
-            "src/Tinyrocket/Magento/Connections/Exceptions.php",
-            "src/Tinyrocket/Magento/Objects/Exceptions.php"
+            "src/Dende/Magento/Connections/Exceptions.php",
+            "src/Dende/Magento/Objects/Exceptions.php"
         ],
         "psr-0": {
-            "Tinyrocket\\Magento\\": "src/"
+            "Dende\\Magento\\": "src/"
         }
     },
     "extra": {

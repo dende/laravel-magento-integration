@@ -1,11 +1,11 @@
-<?php namespace Tinyrocket\Magento;
+<?php namespace Dende\Magento;
 
-use Tinyrocket\Magento\Connections\InvalidConnectionException;
-use Tinyrocket\Magento\Connections\MagentoSoapStorage;
-use Tinyrocket\Magento\Connections\MagentoSoapClient;
-use Tinyrocket\Magento\Connections\MagentoSoapClientException;
-use Tinyrocket\Magento\Objects\MagentoObjectCollection;
-use Tinyrocket\Magento\Objects\MagentoObject;
+use Dende\Magento\Connections\InvalidConnectionException;
+use Dende\Magento\Connections\MagentoSoapStorage;
+use Dende\Magento\Connections\MagentoSoapClient;
+use Dende\Magento\Connections\MagentoSoapClientException;
+use Dende\Magento\Objects\MagentoObjectCollection;
+use Dende\Magento\Objects\MagentoObject;
 
 use Illuminate\Config\Repository;
 
@@ -193,7 +193,7 @@ class Magento {
 	/**
 	 *	Get Primary Connection
 	 *
-	 *	@return Tinyrocket\Magento\Connections\MagentoSoapClient
+	 *	@return Dende\Magento\Connections\MagentoSoapClient
 	 */
 	public function getPrimaryConnection()
 	{
@@ -236,7 +236,7 @@ class Magento {
 	/**
 	 *	Get Primary Connection
 	 *
-	 *	@return Tinyrocket\Magento\Connections\MagentoSoapClient
+	 *	@return Dende\Magento\Connections\MagentoSoapClient
 	 */
 	public function setPrimaryConnection($name)
 	{
@@ -269,7 +269,7 @@ class Magento {
 	/**
 	 *	Register Connection
 	 *
-	 *	@return Tinyrocket\Magento\Connections\MagentoSoapClient
+	 *	@return Dende\Magento\Connections\MagentoSoapClient
 	 */
 	public function register($connection, $return = true, $forget = false)
 	{
@@ -290,7 +290,7 @@ class Magento {
 	/**
 	 *	Register Connection 
 	 *
-	 *	@return Tinyrocket\Magento\Connections\MagentoSoapClient
+	 *	@return Dende\Magento\Connections\MagentoSoapClient
 	 */
 	public function batchRegister($connections)
 	{

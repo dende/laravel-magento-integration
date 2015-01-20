@@ -1,7 +1,7 @@
-<?php namespace Tinyrocket\Magento\Connections;
+<?php namespace Dende\Magento\Connections;
 
-use Tinyrocket\Magento\Connections\ConnectionNotProvidedException;
-use Tinyrocket\Magento\Connections\InvalidConnectionException;
+use Dende\Magento\Connections\ConnectionNotProvidedException;
+use Dende\Magento\Connections\InvalidConnectionException;
 use Illuminate\Support\Facades\Cache;
 
 /**
@@ -62,7 +62,7 @@ class MagentoSoapStorage {
 	/**
 	 *	Register Connection
 	 *
-	 *	@return Tinyrocket\Magento\Connections\MagentoSoapClient
+	 *	@return Dende\Magento\Connections\MagentoSoapClient
 	 */
 	public function add($connection)
 	{
@@ -76,7 +76,7 @@ class MagentoSoapStorage {
 	/**
 	 *	Remove Connection
 	 *
-	 *	@return Tinyrocket\Magento\Connections\MagentoSoapClient
+	 *	@return Dende\Magento\Connections\MagentoSoapClient
 	 */
 	public function remove($connection)
 	{

@@ -1,4 +1,4 @@
-<?php namespace Tinyrocket\Magento;
+<?php namespace Dende\Magento;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -50,7 +50,7 @@ class MagentoServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('tinyrocket/magento');
+		$this->package('dende/magento');
 
 	}
 
@@ -94,7 +94,7 @@ class MagentoServiceProvider extends ServiceProvider {
 	    $this->app->booting(function()
         {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('MagentoSoapClient', 'Tinyrocket\Magento\Facades\MagentoSoapClient');
+            $loader->alias('MagentoSoapClient', 'Dende\Magento\Facades\MagentoSoapClient');
         });
 	}
 
@@ -113,7 +113,7 @@ class MagentoServiceProvider extends ServiceProvider {
 	    $this->app->booting(function()
         {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('MagentoSoapStorage', 'Tinyrocket\Magento\Facades\MagentoSoapStorage');
+            $loader->alias('MagentoSoapStorage', 'Dende\Magento\Facades\MagentoSoapStorage');
         });
 	}
 

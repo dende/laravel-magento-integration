@@ -1,4 +1,6 @@
-<?php namespace Tinyrocket\Magento\Objects;
+<?php namespace Dende\Magento\Facades;
+
+use Illuminate\Support\Facades\Facade;
 
 /**
  * 	Magento API | Connection Exceptions
@@ -26,10 +28,21 @@
  *	THE SOFTWARE.
  *
  * 	@category   MagentoApi
- * 	@package    MagentoApi_Connections_Exceptions
+ * 	@package    MagentoApi_Facades_MagentoSoapClient
  * 	@author     TinyRocket <michael@tinyrocket.co>
  * 	@copyright  2014 TinyRocket
  *
  */
-class MagentoObjectCollectionException extends \InvalidArgumentException {}
-class MagentoObjectException extends \InvalidArgumentException {}
+
+class MagentoSoapClient extends Facade {
+
+  	/**
+   	 * Get the registered name of the component.
+   	 *
+     * @return string
+     */
+  	protected static function getFacadeAccessor() 
+  	{ 
+  		return 'magento_soap_client'; 
+	}
+}

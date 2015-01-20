@@ -1,4 +1,4 @@
-<?php namespace Tinyrocket\Magento\Facades;
+<?php namespace Dende\Magento\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -28,13 +28,13 @@ use Illuminate\Support\Facades\Facade;
  *	THE SOFTWARE.
  *
  * 	@category   MagentoApi
- * 	@package    MagentoApi_Facades_MagentoSoapClient
+ * 	@package    MagentoApi_Facades_Magento
  * 	@author     TinyRocket <michael@tinyrocket.co>
  * 	@copyright  2014 TinyRocket
  *
  */
 
-class MagentoSoapClient extends Facade {
+class Magento extends Facade {
 
   	/**
    	 * Get the registered name of the component.
@@ -43,6 +43,6 @@ class MagentoSoapClient extends Facade {
      */
   	protected static function getFacadeAccessor() 
   	{ 
-  		return 'magento_soap_client'; 
+  		return 'magento'; 
 	}
 }
